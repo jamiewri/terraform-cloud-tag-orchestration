@@ -12,7 +12,7 @@ import (
 
 func main () {
 
-	// Get tags from postitional args
+	// Get tags from positional args
 	t := os.Args[1:]
 	ts := strings.Join(t, ",")
 
@@ -63,5 +63,4 @@ func main () {
 	for i := range w.Items {
 		fmt.Println(w.Items[i].Name)
 	}
-
 }
